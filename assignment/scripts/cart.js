@@ -7,9 +7,21 @@ function addItem ( item){
     return true;
 }
 
-// addItem('blah');
+addItem('wood');
 // console.log(basket);
 
 function listItems (){
-    
+    for( i = 0; i < basket.length; i++){
+        console.log(basket[i] );
+    }
 }
+
+listItems();
+
+function empty(){
+    basket = [];
+}
+
+empty();
+
+console.log(basket);
